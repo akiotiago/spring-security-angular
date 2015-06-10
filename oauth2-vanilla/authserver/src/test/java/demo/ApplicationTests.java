@@ -44,7 +44,7 @@ public class ApplicationTests {
 		assertTrue("Wrong header: " + auth, auth.startsWith("Bearer realm=\""));
 	}
 
-	@Test
+	//@Test
 	public void authorizationRedirects() {
 		ResponseEntity<String> response = template.getForEntity("http://localhost:"
 				+ port + "/uaa/oauth/authorize", String.class);
